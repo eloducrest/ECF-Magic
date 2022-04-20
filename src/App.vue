@@ -1,12 +1,40 @@
 <template>
   <div id="app">
-    <nav>
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </nav>
+    <HeaderComponent></HeaderComponent>
     <router-view/>
+
+    <FooterComponent></FooterComponent>
   </div>
 </template>
+
+<script>
+import HeaderComponent from "@/components/HeaderComponent";
+import FooterComponent from "@/components/FooterComponent";
+
+export default {
+  name: 'App',
+  components: {
+    HeaderComponent,
+    FooterComponent
+  },
+
+  data() {
+    return {
+    }
+  },
+
+  methods: {
+  },
+
+  created() {
+  }
+}
+</script>
+
+
+
+
+
 
 <style lang="scss">
 #app {
